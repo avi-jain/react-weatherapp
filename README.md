@@ -1,1 +1,1 @@
-Simple implementation of Reflux, to display a static list. Uses Github's Fetch for making http requests.
+Simple implementation of a Weather App using OpenWeatherMap API for weather information and Github's Fetch for making http requests.
