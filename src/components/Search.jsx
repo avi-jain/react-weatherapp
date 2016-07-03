@@ -1,17 +1,17 @@
-var React = require();
+var React = require('react');
 
 var Search = React.createClass({
-    onInputChange : function(e){
-        this.setState({input: e.target.value}); 
-    },
-    onClick : function(e){
-        
-        this.setState({input:""})
-    },
     
     render : function(){
         return(
-            
+            <div>
+                <form>
+                    <input type="text"/>
+                    <button type ="submit"></button>
+                </form>
+            </div>
         );
     }
 });
+
+module.exports = Search;

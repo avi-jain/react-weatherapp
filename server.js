@@ -13,24 +13,7 @@ app.all('/*', function(req, res, next) {
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false})); //Middleware
 
-var ingredients = [
-    {
-        "id": "234kjw",
-        "text": "Eggs"
-    },
-    {
-        "id": "as82w",
-        "text": "Milk"
-    },
-    {
-        "id": "234sk1",
-        "text": "Bacon"
-    },
-    {
-        "id": "ppo3j3",
-        "text": "Frog Legs"
-    }
-];
+
 
 app.get('/ingredients',function(req,res){
     res.send(ingredients);
