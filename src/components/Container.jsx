@@ -17,12 +17,14 @@ var  Container = React.createClass({
         HttpService.get()
         .then(function(jsondata){
             console.log(jsondata);
-            this.setState({weatherdata : data});       // Remember this fucking semicolon
+            this.setState({weatherdata : jsondata});       // Remember this fucking semicolon
             }.bind(this));                                 // Use bind otherwise it'll refer to the function and not the React component 
     },
     
     render: function(){
-        
+        if(!this.state.weatherdata){
+            return null;
+        } // Implement lodash rather than this
         return(
             <div>
                 <Search />
